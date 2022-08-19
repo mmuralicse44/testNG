@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="pwd" value="mkumudha@7"/>
+    <parameter name="username" value="mmurali@91"/>
+    <classes>
+      <class name="a04_parallelTest.CrossBrowserTest">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- a04_parallelTest.CrossBrowserTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

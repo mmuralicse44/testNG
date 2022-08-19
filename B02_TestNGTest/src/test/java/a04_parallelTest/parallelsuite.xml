@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test thread-count="5" name="Test">
+  <parameter name="username" value="mmurali@91"></parameter>
+  <parameter name="pwd" value="mkumudha@7"></parameter>
+  <parameter name="browser" value="chrome"></parameter>
+  <classes>
+  <class name="a04_parallelTest.CrossBrowserTest"></class>
+  </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Test1">
+  <parameter name="username" value="mmurali@91"></parameter>
+  <parameter name="pwd" value="mkumudha@7"></parameter>
+  <parameter name="browser" value="edge"></parameter>
+  <classes>
+  <class name="a04_parallelTest.CrossBrowserTest"></class>
+  </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Test2">
+  <parameter name="username" value="mmurali@91"></parameter>
+  <parameter name="pwd" value="mkumudha@7"></parameter>
+  <parameter name="browser" value="firefox"></parameter>
+  <classes>
+  <class name="a04_parallelTest.CrossBrowserTest"></class>
+  </classes>
+  </test> <!-- Test -->  
+</suite> <!-- Suite -->
